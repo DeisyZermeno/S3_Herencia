@@ -1,0 +1,143 @@
+/* Estilos generales (herencia y reset básico) */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url("fondo.jpg");
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    color: #333;
+  }
+  
+  h1{
+    font-family: 'Permanent Marker', cursive; /* Sobrescribe la herencia */
+    color: #6f8694;
+  }
+  
+  h2 {
+    font-family: 'Permanent Marker', cursive; /* Sobrescribe la herencia */
+    color: #113042;
+  }
+  
+  p, ul, ol {
+    margin: 0 0 1em;
+  }
+  
+  ul, ol {
+    padding-left: 20px; /* Heredarán estilos de texto */
+  }
+  /* Encabezado */
+header {
+    background: linear-gradient(90deg, #3a2047, #102029);;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header p {
+    font-size: 1.2em;
+  }
+  
+  /* Navegación */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    background-color: #63546b;
+    margin: 0;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+    color: #95b6c9; /* Cambia el color al pasar el ratón */
+  }
+  
+  /* Secciones principales */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  section:hover { 
+    background: rgba(162, 167, 233, 0.747);
+  }
+  
+  section h2 {
+    border-bottom: 2px solid #211f33;
+    padding-bottom: 5px;
+  }
+  
+  section ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Pie de página */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #352647;
+    color: white;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  
+  .grid img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .seccion-info {
+    margin-bottom: 20px;
+  }
+
+  /* Estilo para los botones */
+  label {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+  }
+
+  /* Estilo para las casillas de verificación (checkbox) ocultas */
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  /* Mostrar contenido cuando el checkbox está seleccionado */
+  input[type="checkbox"]:checked + .contenido {
+    display: block;
+  }
+
+  /* Estilo para el contenido oculto inicialmente */
+  .contenido {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+  }
